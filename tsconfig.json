@@ -1,23 +1,28 @@
 {
+  "extends": ["lavy/tsconfig.base.json"],
   "compilerOptions": {
-    "target": "ES6",
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "moduleResolution": "nodenext",
+    "target": "ESNEXT",
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "./",
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
-    },
-    "declaration": false,
-    "sourceMap": true,
-    "importHelpers": true,
-    "inlineSources": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "skipLibCheck": true
+    }
+    // "outFile": "./",
+    // "allowJs": true,
+    // "checkJs": true,
+    // "jsx": "react-jsxdev",
+    // "declaration": false,
+    // "declarationMap": false,
+    // "sourceMap": false,
+    // "downlevelIteration": true ,
+    // "importHelpers": true,
+    // "lib": [],
+    // "rootDirs": [],
+    // "typeRoots": [],
+    // "types": [],
   },
-  "exclude": ["node_modules", "lib", "es", "dist", "**/__tests__", "**/__test__", "**/demo", "example", "gulpfile.js"]
+  // "include": [""],
+  "exclude": ["node_modules", "**/node_modules/*"]
 }

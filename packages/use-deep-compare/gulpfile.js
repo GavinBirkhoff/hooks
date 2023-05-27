@@ -1,4 +1,4 @@
-const commonConfig = require("../../gulpfile");
-const gulp = require('gulp');
+const commonConfig = require('../../gulpfile')
+const gulp = require('gulp')
 
-exports.default = gulp.series(commonConfig.default) ;
+exports.default = gulp.series(commonConfig.default)
