@@ -26,6 +26,7 @@ importers:
       jest-environment-jsdom: ^29.5.0
       lavy: 1.0.0-Alpha.18
       react: ^18.2.0
+      react-dom: ^18.2.0
       rimraf: ^5.0.0
       ts-jest: ^29.1.0
     devDependencies:
@@ -34,7 +35,7 @@ importers:
       '@babel/preset-env': 7.22.2_@babel+core@7.22.1
       '@babel/preset-react': 7.22.3_@babel+core@7.22.1
       '@testing-library/jest-dom': 5.16.5
-      '@testing-library/react': 14.0.0_react@18.2.0
+      '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
       '@types/jest': 29.5.1
       '@types/node': 20.2.5
       '@types/react': 18.2.7
@@ -51,6 +52,7 @@ importers:
       jest-environment-jsdom: 29.5.0
       lavy: 1.0.0-Alpha.18
       react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       rimraf: 5.0.1
       ts-jest: 29.1.0_q3yovqui4a4rkqhhyak2nfav5u
 
@@ -1832,7 +1834,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/14.0.0_react@18.2.0:
+  /@testing-library/react/14.0.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-S04gSNJbYE30TlIMLTzv6QCTzt9AqIF5y6s6SzVFILNcNvbV/jU96GeiTPillGQo+Ny64M/5PV7klNYYgv5Dfg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1843,6 +1845,7 @@ packages:
       '@testing-library/dom': 9.3.0
       '@types/react-dom': 18.2.4
       react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: true
 
   /@tootallnate/once/2.0.0:
@@ -7086,6 +7089,16 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /react-dom/18.2.0_react@18.2.0:
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: true
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
@@ -7466,6 +7479,12 @@ packages:
     engines: {node: '>=v12.22.7'}
     dependencies:
       xmlchars: 2.2.0
+    dev: true
+
+  /scheduler/0.23.0:
+    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+    dependencies:
+      loose-envify: 1.4.0
     dev: true
 
   /section-matter/1.0.0:

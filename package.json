@@ -33,6 +33,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "lavy": "1.0.0-Alpha.18",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rimraf": "^5.0.0",
     "ts-jest": "^29.1.0"
   }
