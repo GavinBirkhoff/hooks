@@ -19,7 +19,10 @@
     "type": "git",
     "url": "git+https://github.com/GavinBirkhoff/hooks.git"
   },
-  "author": "Gavin Birkhoff <gavinbirkhoff@gmail.com>",
+  "authors": {
+    "name": "GavinBirkhoff",
+    "email": "gavinbirkhoff@gmail.com"
+  },
   "license": "MIT",
   "keywords": [
     "hooks",
