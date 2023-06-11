@@ -8,7 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "moduleResolution": "node"
     // "outFile": "./",
     // "allowJs": true,
     // "checkJs": true,
@@ -24,5 +25,5 @@
     // "types": [],
   },
   // "include": [""],
-  "exclude": ["node_modules", "**/node_modules/*"]
+  "exclude": ["node_modules", "lib", "es", "dist", "**/__tests__", "**/__test__", "**/demo", "example", "gulpfile.js"]
 }
