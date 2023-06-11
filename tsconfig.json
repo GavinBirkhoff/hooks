@@ -3,19 +3,17 @@
   "compilerOptions": {
     "target": "ESNEXT",
     "module": "commonjs",
-    "outDir": "dist",
-    "rootDir": "./",
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     },
-    "moduleResolution": "node"
+    "moduleResolution": "node",
     // "outFile": "./",
     // "allowJs": true,
     // "checkJs": true,
     // "jsx": "react-jsxdev",
-    // "declaration": false,
-    // "declarationMap": false,
+    "declaration": false,
+    "declarationMap": false
     // "sourceMap": false,
     // "downlevelIteration": true ,
     // "importHelpers": true,
