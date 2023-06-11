@@ -1,5 +1,5 @@
 {
-  "name": "use-deep-compare",
+  "name": "use-compare",
   "version": "1.0.0",
   "description": "React hooks library",
   "main": "index.js",
