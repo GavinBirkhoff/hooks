@@ -1,7 +1,7 @@
 {
   "name": "use-deep-compare",
   "version": "1.0.0",
-  "description": "",
+  "description": "React hooks library",
   "main": "index.js",
   "scripts": {
     "build": "gulp"
@@ -15,7 +15,10 @@
   "keywords": [
     "hooks",
     "react",
-    "use"
+    "use",
+    "useDeep",
+    "useCompare",
+    "useDeepCompare"
   ],
   "bugs": {
     "url": "https://github.com/GavinBirkhoff/hooks/issues"

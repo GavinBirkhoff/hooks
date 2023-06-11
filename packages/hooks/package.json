@@ -1,7 +1,7 @@
 {
   "name": "hooks",
   "version": "1.0.0",
-  "description": "",
+  "description": "React hooks library",
   "main": "index.js",
   "scripts": {
     "build": "gulp"
