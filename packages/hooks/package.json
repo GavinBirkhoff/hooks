@@ -2,7 +2,16 @@
   "name": "hooks",
   "version": "1.0.0",
   "description": "React hooks library",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "lib",
+    "es",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "build": "gulp"
   },
