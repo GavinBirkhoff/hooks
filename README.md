@@ -1,3 +1,11 @@
+<div align="center">
+
+![Build Status](https://github.com/GavinBirkhoff/hooks/actions/workflows/node-ci.yml/badge.svg)
+[![codecov](https://codecov.io/github/GavinBirkhoff/hooks/branch/main/graph/badge.svg)](https://codecov.io/github/GavinBirkhoff/hooks)
+![license](https://img.shields.io/github/license/gavinbirkhoff/hooks)
+![release](https://img.shields.io/github/release/gavinbirkhoff/hooks.svg)
+
+</div>
 # hooks
 
 A high quality and reliable React Hooks library.
