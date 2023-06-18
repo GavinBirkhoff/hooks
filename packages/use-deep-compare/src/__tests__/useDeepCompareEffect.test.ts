@@ -2,6 +2,18 @@ import { renderHook, act } from '@testing-library/react'
 import { useDeepCompareEffect } from '../index'
 
 describe('useDeepCompareEffect', () => {
+  let originalWarn: any
+  let mockWarn = jest.fn()
+
+  beforeEach(() => {
+    originalWarn = console.warn
+    console.warn = mockWarn
+  })
+
+  afterEach(() => {
+    console.warn = originalWarn
+  })
+
   it('should call effect when dependencies change', () => {
     const effectMock = jest.fn()
     let dependencies = [1, { foo: 'bar' }, [3, 4]]
@@ -29,5 +41,14 @@ describe('useDeepCompareEffect', () => {
     })
 
     expect(effectMock).toHaveBeenCalledTimes(1)
+  })
+
+  it('should return a Error if dependencies are empty', () => {
+    renderHook(() => useDeepCompareEffect(() => {}, []))
+    expect(mockWarn).toHaveBeenCalled()
+    // TODO
+    // expect(warnMock).toHaveBeenCalledWith(
+    //   '[Error: useDeepCompareEffect should not be used with no dependencies. Use React.useEffect instead.]'
+    // )
   })
 })

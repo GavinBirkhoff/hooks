@@ -12,3 +12,5 @@ screenfullMethods.forEach((item) => {
   document[item] = () => {}
   HTMLElement.prototype[item] = () => {}
 })
+
+process.env.NODE_ENV = 'development'
