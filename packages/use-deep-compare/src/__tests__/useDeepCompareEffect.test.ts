@@ -3,7 +3,7 @@ import { useDeepCompareEffect } from '../index'
 
 describe('useDeepCompareEffect', () => {
   let originalWarn: any
-  let mockWarn = jest.fn()
+  const mockWarn = jest.fn()
 
   beforeEach(() => {
     originalWarn = console.warn

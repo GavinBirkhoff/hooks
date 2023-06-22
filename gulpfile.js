@@ -3,20 +3,20 @@ const babel = require('gulp-babel')
 const ts = require('gulp-typescript')
 const del = require('del')
 
-gulp.task('clean', async function () {
+gulp.task('clean', async () => {
   await del('lib/**')
   await del('es/**')
   await del('dist/**')
 })
 
-gulp.task('es', function () {
+gulp.task('es', () => {
   const tsProject = ts.createProject('tsconfig.json', {
     module: 'ESNext'
   })
   return tsProject.src().pipe(tsProject()).pipe(babel()).pipe(gulp.dest('es/'))
 })
 
-gulp.task('cjs', function () {
+gulp.task('cjs', () => {
   return gulp
     .src(['./es/**/*.js'])
     .pipe(
@@ -27,7 +27,7 @@ gulp.task('cjs', function () {
     .pipe(gulp.dest('lib/'))
 })
 
-gulp.task('declaration', function () {
+gulp.task('declaration', () => {
   const tsProject = ts.createProject('tsconfig.json', {
     declaration: true,
     emitDeclarationOnly: true
